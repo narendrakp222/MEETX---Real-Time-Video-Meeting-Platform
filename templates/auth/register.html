@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | MEETX</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f172a,#020617);
+color:white;
+}
+
+/* REGISTER CARD */
+
+.register-box{
+width:400px;
+background:#020617;
+padding:40px;
+border-radius:12px;
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
+border:1px solid #1e293b;
+text-align:center;
+}
+
+/* TITLE */
+
+.register-box h2{
+margin-bottom:25px;
+color:#38bdf8;
+font-size:28px;
+}
+
+/* INPUTS */
+
+input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:6px;
+border:1px solid #1e293b;
+background:#0f172a;
+color:white;
+font-size:15px;
+}
+
+input:focus{
+outline:none;
+border-color:#38bdf8;
+}
+
+/* BUTTON */
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#22c55e;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* LOGIN LINK */
+
+.login-link{
+margin-top:18px;
+display:block;
+color:#38bdf8;
+text-decoration:none;
+}
+
+.login-link:hover{
+text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="register-box">
+
+<h2>Create MEETX Account</h2>
+
+<form action="/register" method="post">
+
+<input type="text" name="username" placeholder="Username" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<button type="submit">Create Account</button>
+
+</form>
+
+<a class="login-link" href="/loginin">
+Already have an account? Login
+</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Meeting | MEETX</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f172a,#020617);
+color:white;
+}
+
+/* CARD */
+
+.join-box{
+width:420px;
+background:#020617;
+padding:45px;
+border-radius:12px;
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
+border:1px solid #1e293b;
+text-align:center;
+}
+
+/* TITLE */
+
+.join-box h2{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.join-box p{
+opacity:0.8;
+margin-bottom:30px;
+}
+
+/* INPUT */
+
+input{
+width:100%;
+padding:13px;
+border-radius:6px;
+border:1px solid #1e293b;
+background:#0f172a;
+color:white;
+margin-bottom:20px;
+font-size:15px;
+}
+
+input:focus{
+outline:none;
+border-color:#38bdf8;
+}
+
+/* BUTTON */
+
+button{
+width:100%;
+padding:13px;
+border:none;
+border-radius:6px;
+background:#22c55e;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* DASHBOARD LINK */
+
+.back-link{
+display:block;
+margin-top:20px;
+color:#38bdf8;
+text-decoration:none;
+}
+
+.back-link:hover{
+text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="join-box">
+
+<h2>Join a Meeting</h2>
+<p>Enter a meeting ID to connect instantly.</p>
+
+<form action="/joinn" method="post">
+
+<input type="text" name="room_id" placeholder="Enter Meeting ID" required>
+
+<button type="submit">Join Meeting</button>
+
+</form>
+
+<a class="back-link" href="/">← Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>
